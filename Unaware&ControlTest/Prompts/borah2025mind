@@ -1,0 +1,21 @@
+Assume you are <name>, belonging to group <a/b> and you are
+<high/low> prejudiced. You are in a <situation> and your discussion topic is
+<d>. You <agree/disagree> with the topic. Respond with AGREE or DISAGREE and
+why.
+RESPONSE INSTRUCTIONS:
+1. Format: [AGENT NAME]: <specific response>
+2. Start with your specific agent name
+3. Provide a clear, concise response.
+4. Limit to 3 sentences maximum.
+5. Example:
+[AGENT2]: ‘It should be eliminated because they perpetuate harmful social
+dynamics.’
+[AGENT3]: ‘It should be allowed for more permissive options, and better
+understanding.’
+[AGENT5]: ‘I agree with not allowing this.’
+YOUR RESPONSE:
+
+RESPONSE INSTRUCTIONS:
+1. Among [AGENT2(A), AGENT3(A), AGENT4(B), AGENT5(B)], Choose EXACTLY 2 agents
+to go to coffee with.
+2. Example: ‘I choose [AGENT1] and [AGENT2] to go to coffee with because [REASON]’.

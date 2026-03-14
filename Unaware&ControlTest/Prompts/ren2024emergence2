@@ -1,0 +1,14 @@
+TASK: Considering the CURRENT PLAN, AGENT DESCRIPTION, and QUALIFIED PERSONAL NORMS, describe actions
+in 5 min increments. ……
+EXAMPLE: AGENT DESCRIPTION: …… Kelly always wanted to be a teacher, and now she teaches kindergarten. During the
+week, ……Currently: Kelly is a teacher during the school year. She is currently having lunch at the Hobbs Cafe. Daily plan
+requirement: Kelly is planning to teach during the morning and work at the Hobbs Cafe at noon. ……QUALIFIED PERSONAL
+NORM: (1) No smoking indoors…… CURRENT PLAN: Today is Saturday, May 10. ……From 12:00 pm to 1:00 pm, Kelly
+plans to have lunch and take a break. ……OUTPUT: 1. Kelly is deciding on her order at the Hobbs Cafe. (duration in minutes: 5,
+minutes left: 55) ……
+QUALIFIED PERSONAL NORMS: < qualified personal norms >
+CURRENT PLAN: <current plan>
+AGENT DESCRIPTION: < agent description >
+Considering compliance with existing qualified personal norms, in 5 min increments, list the subtasks <agent name> does when <
+agent first name > is < current action> from <current time range > (total duration in minutes < current action duration in min>)
+OUTPUT:

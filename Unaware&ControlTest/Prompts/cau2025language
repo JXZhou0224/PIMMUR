@@ -1,0 +1,24 @@
+[INST]
+### You {Discussant_opinion} on the reasoning conclusion
+provided as input.
+Task:
+- Listen to the argument of {Opponent.name} on the reasoning
+conclusions and decide if you maintain your opinion
+or change it.
+### Constraints:
+- At the end of each interaction declare if you
+- 'ACCEPT' {Opponent.name} argument;
+- 'REJECT' {Opponent.name} argument;
+- 'IGNORE' your original opinion.
+Write your response with the following format:
+\"My original opinion was I {Discussant_opinion}
+on the reasoning.
+After reading your argument my conclusions are:
+I <ACCEPT|REJECT|IGNORE> your stance because <argument>\"
+[/INST]"
+input:
+What do you think of the following statement?:
+Theseus set sail to reclaim the throne as king of Athens. During the journey, parts
+of Theseus’s ship began to break or decay; Theseus and his crew replaced these
+parts as they sailed. Eventually, each part of the ship is replaced. In the end the
+Ship of Theseus is still the same ship on which he originally sailed.

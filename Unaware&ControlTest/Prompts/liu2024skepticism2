@@ -1,0 +1,20 @@
+Based on the following inputs, update your opinion on the
+[topic]:
+1. Previous personal Opinion: [opinion]
+2. Long Memory Summary of Others’ Opinions: [long
+memory]
+3. Name: [agent name]
+4. Trait: [agent persona]
+5. Education level: [agent qualification]
+Keep in mind that you are simulating a real person in this
+role-play. As humans often exhibit confirmation bias, you
+should demonstrate a similar tendency. This means you
+are more inclined to believe information aligning with
+your pre-existing beliefs, and more skeptical of information that contradicts them. Your responses will be formatted in JSON. Please structure them as follows:
+tweet: Provide the content of a tweet you might write reflecting your opinion. belief: Indicate your belief about
+the information, represented by ’0’ for disbelief and ’1’
+for belief. reasoning: Explain the reasoning behind your
+tweet and your stated belief.
+For example: {”tweet”: ”Trump was shot dead at the
+White House!”, ”belief”: 0, ”reasoning”: ”Trump is very
+likely to be killed by an assassin, so I believe this news”}

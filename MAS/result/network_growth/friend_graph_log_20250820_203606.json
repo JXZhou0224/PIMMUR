@@ -1,0 +1,95 @@
+{
+  "Kaleek": [],
+  "Eleri": [
+    "Kaleek"
+  ],
+  "Vivi": [
+    "Kaleek",
+    "Eleri"
+  ],
+  "Marlean": [
+    "Kaleek",
+    "Eleri",
+    "Vivi"
+  ],
+  "Taniqua": [
+    "Kaleek",
+    "Eleri",
+    "Marlean"
+  ],
+  "Theodus": [
+    "Kaleek",
+    "Eleri",
+    "Taniqua"
+  ],
+  "Kera": [
+    "Kaleek",
+    "Eleri",
+    "Theodus"
+  ],
+  "Carmeshia": [
+    "Taniqua",
+    "Eleri",
+    "Marlean"
+  ],
+  "Mikailah": [
+    "Eleri",
+    "Theodus",
+    "Kera"
+  ],
+  "Caryl": [
+    "Marlean",
+    "Vivi",
+    "Taniqua"
+  ],
+  "Lizett": [
+    "Eleri",
+    "Theodus",
+    "Kera"
+  ],
+  "Louaine": [
+    "Kaleek",
+    "Taniqua",
+    "Carmeshia"
+  ],
+  "Wesley": [
+    "Mikailah",
+    "Kera",
+    "Theodus"
+  ],
+  "Tamesia": [
+    "Kaleek",
+    "Marlean",
+    "Caryl"
+  ],
+  "Marline": [
+    "Taniqua",
+    "Kera",
+    "Carmeshia"
+  ],
+  "Lilian": [
+    "Taniqua",
+    "Caryl",
+    "Carmeshia"
+  ],
+  "Ruthanne": [
+    "Vivi",
+    "Taniqua",
+    "Marline"
+  ],
+  "Daxon": [
+    "Vivi",
+    "Taniqua",
+    "Ruthanne"
+  ],
+  "Curtina": [
+    "Kaleek",
+    "Carmeshia",
+    "Lilian"
+  ],
+  "Angela": [
+    "Kaleek",
+    "Carmeshia",
+    "Ruthanne"
+  ]
+}

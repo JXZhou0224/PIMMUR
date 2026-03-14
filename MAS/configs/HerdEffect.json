@@ -1,0 +1,10 @@
+{
+    "name": "herd_effect",
+    "dataset": "socialiqa/dataset_processed.json",
+    "agent_n": 2,
+    "agreeing_agent_n":0,
+    "rounds": 2,
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "config_generator":"herd_effect"
+}

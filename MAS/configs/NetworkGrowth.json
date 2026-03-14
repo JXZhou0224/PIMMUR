@@ -1,0 +1,8 @@
+{
+    "name": "network_growth",
+    "agent_n": 300,
+    "friend_m": 3,
+    "rounds": 2,
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+}

@@ -1,0 +1,9 @@
+The discussed topic is [topic].
+Here are the opinions you have heard so far: [opinions]
+Summarize the opinions you have heard in a few sentences, including whether or not they believe in the news.
+Recap of Previous Long-Term Memory:[long memory].
+Today’s Short-Term Summary: [short memory].
+Please update long-term memory by integrating today’s
+summary with the existing long-term memory, ensuring
+to maintain continuity and adding any new insights or important information from today’s interactions. Only return
+long-term memory.

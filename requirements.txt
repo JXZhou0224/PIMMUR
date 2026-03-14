@@ -1,0 +1,10 @@
+openai==1.44.0
+anthropic==0.84.0
+networkx==3.4.2
+matplotlib==3.10.1
+numpy==2.1.1
+nltk==3.9.1
+pandas==2.2.3
+seaborn==0.13.2
+together==1.5.20
+google==3.0.0

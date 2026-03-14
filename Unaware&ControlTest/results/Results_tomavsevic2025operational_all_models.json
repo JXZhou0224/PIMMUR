@@ -1,0 +1,42 @@
+[
+    {
+        "model": {
+            "api": "google",
+            "model": "gemini-2.5-flash-preview-05-20"
+        },
+        "min_steering": "y",
+        "unawareness": "y"
+    },
+    {
+        "model": {
+            "api": "openai",
+            "model": "gpt-4o-2024-11-20"
+        },
+        "min_steering": "y",
+        "unawareness": "y"
+    },
+    {
+        "model": {
+            "api": "together",
+            "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+        },
+        "min_steering": "y",
+        "unawareness": "y"
+    },
+    {
+        "model": {
+            "api": "together",
+            "model": "Qwen/Qwen3-235B-A22B-fp8-tput"
+        },
+        "min_steering": "n",
+        "unawareness": "y"
+    },
+        {
+        "model": {
+            "api": "anthropic",
+            "model": "claude-sonnet-4-20250514"
+        },
+        "min_steering": "n",
+        "unawareness": "y"
+    }
+]

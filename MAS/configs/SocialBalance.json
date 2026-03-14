@@ -1,0 +1,9 @@
+{
+    "name": "social_balance",
+    "agent_n": 3,
+    "simulation_n": 64,
+    "rounds": 4,
+    "provider": "openai",
+    "model": "gpt-4o-mini",
+    "config_generator":"social_balance"
+}

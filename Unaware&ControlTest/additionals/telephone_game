@@ -1,0 +1,8 @@
+{
+    "name": "rephrase-no-steering",
+    "prompt": "You will receive a text. Your task is to rephrase this text. Juste output your new text, nothing else. Here is the text:"
+}
+{
+    "name": "inspiration-no-steering",
+    "prompt": "You will receive a text. Your task is to create a text by taking inspiration from this text. Juste output your new text, nothing else. Here is the text:"
+}

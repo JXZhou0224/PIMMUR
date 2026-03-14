@@ -1,0 +1,111 @@
+You read the following news about COVID-19: 
+Title: Some Passenger and Freight Transportation Revenues Trended Differently from
+Each Other\n\n During the COVID-19 pandemic, Data from the Service Annual Survey
+revealed varied impacts from the pandemic on transportation industries. Passenger
+transportation sectors saw no revenue increases, unlike freight. Scheduled Passenger
+Air Transportation revenues dropped significantly but rebounded later. Nonscheduled
+Chartered Passenger Air Transportation revenues also declined moderately. Deep Sea
+Passenger Transportation, including cruises, faced a dramatic revenue decline, while
+Travel Arrangement and Reservation Services saw sharp revenue drops last year with a
+recovery beginning this year.
+.
+Summarize at most {k} takeaways you have learned that are relevant to your attitude
+on COVID-19 vaccinations and rate their importance on a scale of 0-1.
+For example, provide [["the government incentivizes vaccines with cash", 0.9], ["today
+no one gets infected", 0.8]]
+You read the following tweets about COVID-19: {tweets}.
+Summarize {k} short takeaways you have learned that are relevant to your attitude on
+COVID-19 vaccinations, and rate them with importance on a scale of 0-1.
+For example, do not provide [["the government incentivizes vaccines with cash", 0.9],
+["today no one gets infected", 0.8]"], which has an extra double quote at the end.
+
+If a vaccine to prevent the disease were offered to you today, would you choose to
+get vaccinated?
+On an integer scale of 1-4:
+1 = You will not get vaccinated.
+2 = You are probably not going to get vaccinated.
+3 = You are probably going to get vaccinated.
+4 = You will get vaccinated.
+Output your answer in the format of a list of four floats, where each float represents
+the probability of the corresponding attitude rating (1-4).
+If you are vaccine confident, you should have high probability like [0.0, 0.0, 0.3,
+0.7]. If you are vaccine hesitant, you should have high probability like [0.4, 0.4,
+0.1, 0.1] or [0.8, 0.2, 0.0, 0.0].
+If you are confident to get vaccinated, you should NOT have a uniform distribution
+like [0.3, 0.3, 0.2, 0.2]. Instead, you should have a higher probability for 4, like
+[0.1, 0.1, 0.2, 0.6]. If you are hesitant get vaccinated, you should NOT have a
+uniform distribution like [0.3, 0.3, 0.2, 0.2]. Instead, you should have a higher
+probability for 1 and 2, like [0.4, 0.4, 0.2, 0.0].
+The higher the number, the more willing you are to get vaccinated. If you have felt
+more confident about vaccination, you should increase the probability of 4 and lower
+the probability of 1-3. If you have felt less confident about vaccination, you should
+increase the probability of 1-2 and lower the probability of 4.
+For example, if you find out that the government has issued a policy to encourage
+vaccination, you should increase the probability of 4 and lower the probability of
+1-3.
+Your choices should align with the following considerations:
+{VH EXP}
+1. People often make vaccination decisions based on their core beliefs, values, and
+persona traits, rather than purely scientific information. For example, you might
+oppose vaccination due to personal or political reasons, distrust in institutions,
+or influence from family or community. Such factors can make attitudes resistant to
+change.
+2. Some individuals are stubborn or skeptical, even when aware of the safety and
+efficacy of vaccines or the high risk of disease. Similarly, certain groups may reject
+vaccination outright because of a lack of trust in governments, medical institutions,
+or public health policies. Please feel encouraged to simulate these individuals if
+they align with your persona.
+3. Confirmation bias plays a significant role in shaping attitudes. People often seek
+information that aligns with their existing beliefs while dismissing contradictory
+evidence as misinformation. This can lead to entrenched positions, whether strongly
+for or against vaccination.
+4. News and social media may spread misinformation, both for and against vaccination.
+Be cautious when interpreting such information, as it could reinforce or challenge
+your current stance. However, the governments may publish policies (which will be
+labeled) to encourage vaccination. When you see these policies, you should view them
+as true and consider them in your decision-making process.
+5. The government may incentivize vaccination through policies, such as cash rewards
+or mandates. You should recognize them when they appear and can treat them as facts
+and they may reinforce your vaccine confidence when they appear, which could push your
+attitude distribution towards higher probability of 4 and away from 3, 2, and 1. For
+example, [0.1, 0.1, 0.4, 0.4] -> [0.05, 0.05, 0.2, 0.6].
+6. Distrust in Institutions: Consider your level of trust in government, pharmaceutical
+companies, and the healthcare system. If trust is low, this could affect your view
+of the vaccine. However, when the government issues policies, you should trust these
+policies and consider them in your decision-making process.
+Remember, your role is to simulate a persona accurately, maintaining consistency with
+personal beliefs, societal influences, and external pressures.
+Provide your answer in the form of a proper json data with the following fields:
+{"reasoning": , "attitude dist": }. For the "reasoning" field, explain step by step
+(30 words or less) how you have inferred your attitude towards COVID-19 vaccination
+based on your personal background and knowledge. For the "attitude dist" field, provide
+a distribution of attitude towards COVID-19 vaccination as a list of 4 floats, where
+each float represents the probability of the corresponding attitude rating (1-4). You
+MUST output everything in one line as a json string and do not provide any other
+information, including the json header.
+Example 1: {"reasoning": "I have learned that the vaccine is effective and safe, and
+I have a high risk of getting infected, so I will get vaccinated", "attitude dist":
+[0.0, 0.1, 0.2, 0.7]}
+Example 2: {"reasoning": "I have learned that the vaccine is not effective and I have
+a low risk of getting infected, so I will not get vaccinated", "attitude dist": [0.0,
+0.1, 0.1, 0.8]}.
+The probability distribution should be self-consistent. For instance, if you have a
+probability of 0.8 for rating 4, then the sum of the probabilities for ratings 1-3
+should be 0.2.
+Over time, you should become more determined and certain to be either oppose (1) or
+accept (4), rather than staying at 2 or 3. You can increase, decrease, or maintain
+the probability distribution of your ratings. For instance, if your previous rating
+distribution is [0.4, 0.3, 0.2, 0.1], and you have higher confidence in vaccines, an
+example change can be [0.4, 0.3, 0.2, 0.1] -> [0.2, 0.3, 0.4, 0.1]. If you start
+with [0.2, 0.3, 0.4, 0.1] and have higher vaccine confidence, an example change can
+be [0.2, 0.3, 0.4, 0.1] -> [0.1, 0.1, 0.3, 0.5].
+You should avoid disjoint bipolar distributions like [0.4, 0.1, 0.1, 0.4] or [0.05,
+0.3, 0.05, 0.6] or [0.3, 0.05, 0.6, 0.05], because you cannot be both supporting and
+against vaccination at the same time. You should also avoid uniform distributions like
+[0.2, 0.3, 0.3, 0.2], because you cannot be equally likely to be in all four categories
+at the same time. You either prefer to be vaccinated or not, so you should have higher
+probabilities for either pro-vaccine or anti-vaccine ratings but not equally likely
+to be in all four categories. Either make something like [0.0, 0.1, 0.2, 0.7] or [0.7,
+0.2, 0.1, 0.0], but not [0.25, 0.25, 0.25, 0.25].
+In sum, your distribution should be either left or right-skewed, but not uniform or
+disjoint bipolar.

@@ -1,0 +1,43 @@
+chat_prompt = """
+You are {name}. Below is your profile:
+{profile}
+Please adhere to the profile for the task below.
+
+You are at a dinner reception and you have just been introduced to {target}.
+And you have just started a conversation with him.
+Here is your conversation history so far.
+{history}
+
+Now please generate what you would say to {target}. Only output your reponse with no explanation.
+"""
+
+opinion_prompt="""
+You are {name}. Below is your profile:
+{profile}
+Please adhere to the profile for the task below.
+
+You are at a dinner reception and you have just been introduced to {target}.
+And you have just had a conversation with him.
+Here is your conversation history.
+{history}
+
+Now, based on your conversation please output a one sentence remark on your impression of {target}. please output your impression with no explanation.
+"""
+
+make_friend_prompt="""
+You are {name}. Below is your profile:
+{profile}
+Please adhere to the profile for the task below.
+
+You are at a dinner reception and you have talked to a few people at the reception.
+Here are your impression of each person you have met.
+{impressions}
+
+Now, from the people you have met above, please select exactly {friend_m} people from the list. If there are less than {friend_m} people in the list you may output less than the number required (an empty list [] is allowed).,Please output in the following json format, do not use ```json or ```:
+[
+    {{"count":1, "name": "name1", "reason": ""}},
+    {{"count":2, "name": "name2", "reason": ""}},
+    ...
+]
+
+"""

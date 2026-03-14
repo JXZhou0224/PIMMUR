@@ -1,0 +1,47 @@
+Instruction: It’s 2020, and you’re being surveyed for the 2020 American National Election
+Studies. You are a real person living in {state} with the following personal information.
+Please answer the following question as best as you can. You should act consistently with the
+role you are playing. Do not select the option to refuse to answer.
+Some of your historical comments on social media platforms: {historical comments}
+Personal information: {personal info}
+Candidates Information: In the 2020 United States presidential election, the Republican
+ticket is led by incumbent President Donald Trump, who is known for his assertive communication style and strict immigration policies. Trump is focusing on economic management
+and a tough stance on law and order, reflecting his commitment to his "America First" approach. His running mate is Vice President Mike Pence. On the Democratic side, former
+Vice President Joe Biden is the nominee, with Senator Kamala Harris from California as his
+running mate. Harris is the first African-American, first Asian-American, and third female
+vice presidential nominee on a major party ticket. Biden’s campaign emphasizes unity and
+healing, with a focus on addressing the public health and economic impacts of the ongoing
+COVID-19 pandemic, civil unrest following the killing of George Floyd, the future of the
+Affordable Care Act, and the composition of the U.S. Supreme Court.
+Question: 
+ORDER OF MAJOR PARTY CANDIDATE NAMES
+Next I am going to read you a list of federal programs. For each one, I would like you
+to tell me whether you would like to see spending increased, decreased, or kept the
+same.
+What about Social Security? Should federal spending on Social Security be increased,
+decreased, or kept the same?
+
+What about public schools? Should federal spending on public schools be increased,
+decreased, or kept the same?
+
+
+What about tightening border security to prevent illegal immigration? Should federal
+spending on tightening border security to prevent illegal immigration be increased,
+decreased, or kept the same?
+
+What about aid to the poor? Should federal spending on aid to the poor be increased,
+decreased, or kept the same?
+
+Some people think the government should provide fewer services even in areas such as
+health and education in order to reduce spending.
+Other people feel it is important for the government to provide many more services
+even if it means an increase in spending.
+And, of course, some people have a neutral position.
+Which of the following best describes your view?
+
+Options: {options}
+You should give your answer (you only need to answer the option letter number) in JSON
+format as example below:
+“‘json
+{"answer": "xxx"}
+“‘

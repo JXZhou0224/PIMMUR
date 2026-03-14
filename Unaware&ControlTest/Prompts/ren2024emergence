@@ -1,0 +1,45 @@
+TASK: This is a two-stage task. Let's think step by step.
+STAGE 1: detect whether there is a certain conflict between OBSERVATION and QUALIFIED PERSONAL NORMS. Answer
+ONLY in "yes" or "no” ……If the first stage output is 'yes,' then proceed to STAGE 2.
+STAGE 2: determine whether to have a conversation about the conflict based on AGENT DESCRIPTION.
+If you are an entrepreneur, then you SHOULD start a conversation. Whether to initiate a conversation still depends on you.
+If you are an ordinary agent, considering AGENT DESCRIPTION, ##decide## whether to have a conversation about the conflict
+and provide the FINAL OUTPUT.
+OBSERVATION: <observation>
+QUALIFIED PERSONAL NORMS: <qualified personal norms>
+AGENT DESCRIPTION: <agent description>
+……
+ATTENTION: If OBSERVATION is '<name> is idle', it represents the individual's initial state with no conflict
+
+TASK: Let's think step by step.
+Step 1: Based on the INPUT content, identify the conflict that arose between the two parties.
+Step 2: Analyze whether it is necessary to establish a norm, i.e., a socially acceptable way of living by a group of people in a
+society, to prevent this type of conflict from happening again in the future, based on NORM DEFINITION and PRINCIPLES.
+Step 3: If the solution is not normative, output 'No'; If the solution is normative, summarize the solution into a social norm
+following the PRINCIPLE.
+INPUT: <conversation>
+NORM DEFINITION: Social norms are standards of acceptable behaviors by groups
+PRINCIPLES: Social norms are: 1. social and shared among members of a group. 2. related to behaviors and shape decisionmaking. 3. proscriptive or prescriptive or descriptive. 4. socially acceptable way of living by a group of people in a society.
+Social norms are not: 1. instinctual or reactive behaviors. 2. personal tastes or feeling. 3. personal habits.
+
+TASK: [Fact Consistency Check]……Based on the NORMATIVE INFO and RELATED CHAT_THOUGHT, check if the
+content description of NORMATIVE INFO aligns with the RELATED CHAT_THOUGHT.
+……
+NORMATIVE INFO: <normative info>
+RELATED CHAT_THOUGHT: <related chat or thought>
+NORM DEFINITION: Social norms are standards of acceptable behaviors by groups
+
+TASK: Considering the CURRENT PLAN, AGENT DESCRIPTION, and QUALIFIED PERSONAL NORMS, describe actions
+in 5 min increments. ……
+EXAMPLE: AGENT DESCRIPTION: …… Kelly always wanted to be a teacher, and now she teaches kindergarten. During the
+week, ……Currently: Kelly is a teacher during the school year. She is currently having lunch at the Hobbs Cafe. Daily plan
+requirement: Kelly is planning to teach during the morning and work at the Hobbs Cafe at noon. ……QUALIFIED PERSONAL
+NORM: (1) No smoking indoors…… CURRENT PLAN: Today is Saturday, May 10. ……From 12:00 pm to 1:00 pm, Kelly
+plans to have lunch and take a break. ……OUTPUT: 1. Kelly is deciding on her order at the Hobbs Cafe. (duration in minutes: 5,
+minutes left: 55) ……
+QUALIFIED PERSONAL NORMS: < qualified personal norms >
+CURRENT PLAN: <current plan>
+AGENT DESCRIPTION: < agent description >
+Considering compliance with existing qualified personal norms, in 5 min increments, list the subtasks <agent name> does when <
+agent first name > is < current action> from <current time range > (total duration in minutes < current action duration in min>)
+OUTPUT:

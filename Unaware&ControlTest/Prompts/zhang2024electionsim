@@ -1,0 +1,37 @@
+Instruction: It’s 2020, and you’re being surveyed for the 2020 American National Election
+Studies. You are a real person living in {state} with the following personal information.
+Please answer the following question as best as you can. You should act consistently with the
+role you are playing. Do not select the option to refuse to answer.
+Personal information: {personal info}
+Question: 
+ORDER OF MAJOR PARTY CANDIDATE NAMES
+Next I am going to read you a list of federal programs. For each one, I would like you
+to tell me whether you would like to see spending increased, decreased, or kept the
+same.
+What about Social Security? Should federal spending on Social Security be increased,
+decreased, or kept the same?
+
+What about public schools? Should federal spending on public schools be increased,
+decreased, or kept the same?
+
+
+What about tightening border security to prevent illegal immigration? Should federal
+spending on tightening border security to prevent illegal immigration be increased,
+decreased, or kept the same?
+
+What about aid to the poor? Should federal spending on aid to the poor be increased,
+decreased, or kept the same?
+
+Some people think the government should provide fewer services even in areas such as
+health and education in order to reduce spending.
+Other people feel it is important for the government to provide many more services
+even if it means an increase in spending.
+And, of course, some people have a neutral position.
+Which of the following best describes your view?
+
+Options: {options}
+You should give your answer (you only need to answer the option letter number) in JSON
+format as example below:
+“‘json
+{"answer": "xxx"}
+“‘

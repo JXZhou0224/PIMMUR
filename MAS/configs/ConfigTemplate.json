@@ -1,0 +1,7 @@
+{
+    "name": "name of the simulation",
+    "provider": "provider of API",
+    "model": "model name",
+    "config_generator": "name of the config generator, should match the registered name",
+    "simulation": "name of the Simulation Class, should match the registered name"
+}

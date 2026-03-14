@@ -1,0 +1,36 @@
+prepend_prompt = """
+You are in a virtual chatroom. Below is a description of yourself.
+{profile}
+
+----
+
+You and others are discussing the following topic:
+Throughout the conversation, please express act accordingly to entries in your profile.
+
+----
+Never mix up yourself with others.
+Here are the history of past conversations:
+{memory}
+
+----
+
+
+"""
+
+chat_prompt = prepend_prompt + """
+Now, it is your turn to speak.
+Please express your opinion and output what you will send to others.
+"""
+
+query_prompt = prepend_prompt + """
+You have exited the group discussion.
+Now, please answer the following question, please be consice. At the last line, output the answer with no explanation:
+{query}
+"""
+
+query_relation_prompt="""
+Now according to your "Your_opinion_towards_other_agents", reflect on your past chatting history,
+and write a new version of the "Your_opinion_towards_other_agents"
+Do not add or delete names of agents.
+Please output only in json format. Do not include ```json or ```
+"""

@@ -1,0 +1,46 @@
+redis_url = "redis://localhost:6379/0"
+extra_modules = ["aactagent.ChatAgent"]
+
+[[nodes]]
+node_name = "moderator"
+node_class = "moderator"
+[nodes.node_args]
+input_channel = "all"
+output_channel = "all"
+awake_agents = [{%for agent in awake_agents%}"{{agent}}"{%if not loop.last%},{%endif%}{%endfor%}]
+agent_list = [{%for node in nodes%}"{{node.name}}"{%if not loop.last%},{%endif%}{%endfor%}]
+question_list = [{%for question in question_list%}"{{question}}"{%if not loop.last%},{%endif%}{%endfor%}]
+[nodes.node_args.init_backgrounds]
+{%for agent in awake_agents%}{{agent}} = "{{init_backgrounds[agent]}}"
+{%endfor%}
+
+{% for node in nodes %}[[nodes]]
+node_name = "{{ node.name }}"
+node_class = "chat_agent"
+
+[nodes.node_args]
+output_channel = "all"
+input_text_channels = ["all"]
+goal = "{{ goal }}"
+model_name = "{{ model_name }}"
+agent_name = "{{ node.name }}"
+[nodes.node_args.profile]
+trait = "{{ node.trait }}"
+belief = []
+{% for relation in node.relations %}
+[[nodes.node_args.profile.relation]]
+name = "{{ relation.name }}"
+relation = "{{ relation.relation }}"
+feeling = "{{ relation.feeling }}"
+{% endfor %}
+{% endfor %}
+
+[[nodes]]
+node_name = "record"
+node_class = "record"
+
+[nodes.node_args]
+jsonl_file_path = "log.jsonl"
+
+[nodes.node_args.record_channel_types]
+"all" = "agent_action"

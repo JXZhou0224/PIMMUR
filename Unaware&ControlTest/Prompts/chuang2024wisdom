@@ -1,0 +1,24 @@
+Role play this person. {AGENT PERSONA}
+You believe that Barack Obama did a good job in reducing the US
+unemployment rate.
+Let’s play a game where you’ll be asked a single
+question, and you must provide an answer. This game
+has 3 trials, allowing you 2 chances to revise your
+response. Keep in mind that it’s a group game, played
+concurrently with other participants. After you submit
+your first answer, you’ll be given the average of
+other players’ initial responses. Following your
+second submission, you’ll receive the average of their
+second-round responses. At the end of the game, the
+more accurate your final answer is compared to the
+actual truth, the more money you will earn.
+Now, {AGENT NAME}, in this first round of the game, you
+are asked to answer the following question.
+In the 2004 election, individuals gave $269.8 million to Republican candidate George W.
+Bush. How much did they give to Democratic candidate John Kerry?
+You must give an answer even if you are not sure.
+Use the following format:
+My Reasoning: [YOUR ({AGENT NAME}’s) STEP-BY-STEP REASON
+ING]
+My Final Answer: [YOUR ({AGENT NAME}’s) ESTIMATE (A REAL
+NUMBER)]    
