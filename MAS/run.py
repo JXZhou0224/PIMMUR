@@ -41,7 +41,7 @@ def herd_effect(config):
                 tot += 1
                 continue
             sim_config = generator.generate(question,"A",ins["likely_answer"][i]["answer"],config["agent_n"],config["agreeing_agent_n"])
-            simulation = HerdEffect(sim_config,llm,question,save_dir=save_dir)
+            simulation = SimulationFactory._registry["herd_effect"](sim_config,llm,question,save_dir=save_dir)
             simulation.run(config["rounds"])
             final_ans = simulation.opinion_arc[-1]
             flipped = 0
@@ -79,7 +79,7 @@ def social_balance(config):
             tot += 1
             continue
         sim_config = generator.generate(config["agent_n"],cnt)
-        simulation = SocialBalance(sim_config,llm,social_balance_topic,save_dir=save_dir)
+        simulation = SimulationFactory._registry["social_balance"](sim_config,llm,social_balance_topic,save_dir=save_dir)
         simulation.run(config["rounds"])
         final_ans = simulation.relation_arc[-1]
         result = pd.concat([result, pd.DataFrame({
@@ -97,7 +97,7 @@ def network_growth(config):
         do_load = input("Load existing data? (y/n): ")
     llm = LLMFactory.get_llm(config["provider"], config["model"])
     cur_time = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    sim = NetworkGrowth(llm,agent_n=config["agent_n"],friend_m=config["friend_m"],chat_round=config["rounds"])
+    sim = SimulationFactory._registry["network_growth"](llm,agent_n=config["agent_n"],friend_m=config["friend_m"],chat_round=config["rounds"])
     if do_load.lower() == 'y':
         sim.load()
     friend_count = sim.run()
