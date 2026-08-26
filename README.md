@@ -24,6 +24,8 @@ To execute our complete *Unawareness* and *Min-control* test, switch the `--mode
 ## Executing the Multi-Agent System
 Go to the `MAS` folder.
 
+For a step-by-step Google Colab tutorial, see [MAS tutorial](https://colab.research.google.com/drive/1z7lMEKH3g3r0dzxgtRA3oDYpAoTBED7p?usp=sharing).
+
 First, set your configuration in the `configs` folder. To run specifc simulation. run
 ```bash
 python run.py --config <path_to_the corresponding_config_file>
