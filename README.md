@@ -1,5 +1,7 @@
 # The PIMMUR Principles: Ensuring Validity in Collective Behavior of LLM Societies
 ## Installation
+We have provided a standalone Multi-Agent System tutorial. You can download `standalone_MAS_tutorial.ipynb` directly, and upload it to google colab to run an example simulation without the need of cloning the repository manually.
+
 All test was excuted on Ubuntu 24.04.1 LTS, using `python==3.10.12`
 Clone the repo and install dependencies
 ```bash
@@ -23,8 +25,6 @@ To execute our complete *Unawareness* and *Min-control* test, switch the `--mode
 
 ## Executing the Multi-Agent System
 Go to the `MAS` folder.
-
-For a step-by-step Google Colab tutorial, see [MAS tutorial](https://colab.research.google.com/drive/1z7lMEKH3g3r0dzxgtRA3oDYpAoTBED7p?usp=sharing).
 
 First, set your configuration in the `configs` folder. To run specifc simulation. run
 ```bash
