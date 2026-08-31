@@ -5,8 +5,6 @@ We have provided a standalone Multi-Agent System tutorial. You can download `sta
 All test was excuted on Ubuntu 24.04.1 LTS, using `python==3.10.12`
 Clone the repo and install dependencies
 ```bash
-git clone https://github.com/JXZhou0224/PIMMUR.git
-cd PIMMUR
 pip install -r requirements.txt
 ```
 This should take less than 5 minutes to set up.
